@@ -1,198 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Athera Naturals Shop</title>
-    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css" />
-     <!-- Add the Font Awesome stylesheet -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-   integrity="sha512-SU8NQG5jvGgf5N5YnH8W5Mj/v/4gX4n4/KjIz+8pTJTBoTIKTnT2QjKl8f+e3mqLm9XN/vMnBzjaw2b1cg=="
-   crossorigin="anonymous" />
-
-   <style>
-    /* Custom styles to limit image size */
-    .store-product img {
-        max-width: 100%; /* Adjust as needed */
-        max-height: 100%; /* Adjust as needed */
-        height: auto;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Maintenance</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .modal-message {
+      color: red;
     }
-</style>
-
+    .center-button {
+      text-align: center;
+    }
+    /* Animation for the Buy New Domain button */
+    @keyframes shake {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-10px);
+      }
+    }
+    .shake-effect {
+      animation: shake 0.5s ease-in-out infinite;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <div class="container">
-            <!-- <h1>Fresh App</h1> -->
-            <!-- Search Box -->
-            <div class="search-box">
-                <form action="" onsubmit="return false">
-                    <input type="text" id="search" placeholder="Search for products here..." />
-                </form>
-            </div>
-            <!-- Buttons -->
-           <div class="filter-box">
-                <a href="#" class="btn active" data-filter="all">All</a>
-                <a href="#" class="btn" data-filter="perfumes">Perfumes</a>
-                <a href="#" class="btn" data-filter="lotions">Lotions</a>
-                <!-- <a href="#" class="btn" data-filter="clothes">Clothes</a> -->
-            </div>
+
+  <!-- Your modal HTML structure -->
+  <div class="modal" id="maintenanceModal" tabindex="-1" role="dialog" aria-labelledby="maintenanceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title w-100" id="maintenanceModalLabel">SHUTDOWN NOTICE</h5>
         </div>
-    </header>
-    <main>
-        <div class="main-container">
-            <section class="container" id="store-products">
-                 <!-- Single product - perfumes -->
-              <div class="store-product perfumes">
-                <img src="images/portfolio-1.jpg" alt="" />
-                <div class="product-details">
-                    <h2>Club de Nuit Perfume</h2>
-                    <p> UGX. 15,000</p>
-                    <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Club%20de%20Nuit%20."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-
-                </div>
-            </div> <!-- Single product - perfumes -->
-              <div class="store-product perfumes">
-                <img src="images/portfolio-2.jpg" alt="" />
-                <div class="product-details">
-                    <h2>Valentino Perfume</h2>
-                    <p> UGX. 30,000</p>
-                    <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Valentino."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-
-                </div>
-            </div> 
-                                        
-                                   <!-- Single product - lotions -->
-                                   <div class="store-product lotions">
-                                    <img src="images/portfolio-11.jpg" alt="" />
-                                    <div class="product-details">
-                                        <h2>Pearl White Body Lotion</h2>
-                                        <p> UGX. 45,000</p>
-                                        <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Pearl%20Lotion."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                                    </div>
-                                </div> 
-
-            <!-- Single product - perfumes -->
-            <div class="store-product perfumes">
-                <img src="images/portfolio-3.jpg" alt="" />
-                <div class="product-details">
-                    <h2>My Way Perfume</h2>
-                    <p> UGX. 27,000</p>
-                    <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20My%20Way%20Perfume."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                </div>
-            </div> 
-        
-                        <!-- Single product - perfumes -->
-                        <div class="store-product perfumes">
-                          <img src="images/portfolio-4.jpg" alt="" />
-                          <div class="product-details">
-                              <h2>Giorgio Amani Perfume</h2>
-                              <p> UGX. 78,000</p>
-                              <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Giorgio%20Perfume."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                          </div>
-                      </div> 
-
-                                        <!-- Single product - lotions -->
-                                        <div class="store-product lotions">
-                                          <img src="images/portfolio-10.jpg" alt="" />
-                                          <div class="product-details">
-                                              <h2>Honey Glow Body Lotion</h2>
-                                              <p> UGX. 38,000</p>
-                                              <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Honey%20Lotion."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                                          </div>
-                                      </div> 
-                  
-                                       <!-- Single product - perfumes -->
-                                       <div class="store-product perfumes">
-                                        <img src="images/portfolio-5.jpg" alt="" />
-                                        <div class="product-details">
-                                            <h2>Instant Crush Perfume</h2>
-                                            <p> UGX. 15000</p>
-                                            <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Instant%20Crush%20Perfume."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                                        </div>
-                                    </div> 
-                                
-                                   <!-- Single product - perfumes -->
-                                   <div class="store-product perfumes">
-                                    <img src="images/portfolio-6.jpg" alt="" />
-                                    <div class="product-details">
-                                        <h2>Gucci Flora Perfume</h2>
-                                        <p> UGX. 100,000</p>
-                                        <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Gucci%20Perfume."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                                    </div>
-                                </div> 
-                            
-                                   <!-- Single product - perfumes -->
-                                   <div class="store-product perfumes">
-                                    <img src="images/portfolio-7.jpg" alt="" />
-                                    <div class="product-details">
-                                        <h2>Hugo Boss Perfume</h2>
-                                        <p> UGX. 7,000</p>
-                                        <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Boss%20Perfume."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                                    </div>
-                                </div> 
-                            
-                                   <!-- Single product - perfumes -->
-                                   <div class="store-product perfumes">
-                                    <img src="images/portfolio-8.jpg" alt="" />
-                                    <div class="product-details">
-                                        <h2>Mangera Holidays Perfume</h2>
-                                        <p> UGX. 52,000</p>
-                                        <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Mangera%20Perfume."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                                    </div>
-                                </div> 
-                            
-                 
-                            
-                                   <!-- Single product - perfumes -->
-                                   <div class="store-product perfumes">
-                                    <img src="images/portfolio-9.jpg" alt="" />
-                                    <div class="product-details">
-                                        <h2>Idole Lancome Perfume</h2>
-                                        <p> UGX. 45,000</p>
-                                        <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Idole%20Perfume."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-                                    </div>
-                                </div> 
-
-                            
-                                                                                            
-
-<!-- Single product - lotions -->
-<div class="store-product lotions">
-  <img src="images/portfolio-12.jpg" alt="" />
-  <div class="product-details">
-  <h2>Morinaga Natural Oil</h2>
-  <p> UGX. 20,000</p>
-  <a href="https://api.whatsapp.com/send?phone=+256708018544&text=Hello%20Athera%20Naturals,%20I%20would%20like%20to%20buy%20Moringa%20Natural%20Oil."> <i class="fas fa-shopping-cart"></i> Order Now!</a>
-
-</div>
-</div> 
-            </section>
-            <div class="container no-result">
-                <p>No more products to display! Try searching using a different name or contact us on<p><a href="tel:+256312225711">0312225711</a></p>
-                </p>
-            </div>
+        <div class="modal-body">
+          <p id="countdown" class="modal-message">Initializing...</p>
+          <!-- Animated "Buy New Domain" button with an icon -->
+          <div class="center-button">
+            <button type="button" class="btn btn-success shake-effect" id="buyNewDomainBtn">
+              <span>&#x1F449;</span> Buy New Domain
+            </button>
+          </div>
         </div>
-    </main>
-
-    <!-- ======= Footer ======= -->
-
-  <center><footer class="text-center">
-    <div class="credits">
-        <script>
-            document.write("© Ujenzi Group of Companies " + new Date().getFullYear());
-        </script>
+        <div class="modal-footer justify-content-center">
+          <!-- "Ok, I understand" button -->
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I understand.</button>
+        </div>
+      </div>
     </div>
-</footer></center>
+  </div>
 
-</div>
-</div>
-</footer><!-- End Footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const countdownEndDate = new Date('2023-12-13T00:00:00Z').getTime();
 
-    <script src="script.js"></script>
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const timeDifference = countdownEndDate - now;
+
+        if (timeDifference > 0) {
+          const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+          // Change the message and add a line break
+          document.getElementById('countdown').innerHTML = `This website is currently hosted on a temporary link, and it will be deleted in the next 24 hours.<br>If you are the developer, we recommend purchasing a domain name to avoid losing your content and ensure uninterrupted access for your users.<br>The website will be deleted in <span class="modal-message">${hours} Hours, ${minutes} Minutes, and ${seconds} Seconds.</span>`;
+        } else {
+          // Change the message when the time ends
+          const deletedMessage = document.createElement('p');
+          deletedMessage.className = 'modal-message';
+          deletedMessage.innerHTML = 'This website has been deleted from our temporary link. Please purchase a domain name to ensure uninterrupted access for your users.';
+          document.getElementById('countdown').replaceWith(deletedMessage);
+          // Remove the "Ok, I understand" button
+          document.querySelector('.modal-footer').remove();
+        }
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      $('#maintenanceModal').modal({
+        backdrop: 'static',
+        keyboard: false
+      });
+
+      // Add click event for animated "Buy New Domain" button
+      document.getElementById('buyNewDomainBtn').addEventListener('click', function () {
+        // Replace 'YOUR_DOMAIN_REGISTRAR_URL' with the actual URL of the domain registrar
+        window.location.href = 'https://www.godaddy.com/';
+      });
+    });
+  </script>
 </body>
-
 </html>
